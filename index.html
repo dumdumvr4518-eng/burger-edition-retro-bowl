@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Burger Edition - Retro Bowl</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10131b;color:#fff;font-family:Arial,sans-serif;overflow:hidden}.top{height:62px;background:#1b2230;border-bottom:1px solid #374154;display:flex;align-items:center;justify-content:space-between;padding:0 18px}.brand{font-weight:900;font-size:22px;color:#ffb51b}.btn{border:0;border-radius:9px;padding:10px 14px;background:#ffb51b;color:#171717;font-weight:800;cursor:pointer}.wrap{height:calc(100vh - 62px);display:flex;justify-content:center;align-items:center;padding:10px}.game{width:min(100%,1100px);height:100%;border:1px solid #374154;border-radius:12px;overflow:hidden;background:#000}iframe{width:100%;height:100%;border:0} @media(max-width:600px){.top{height:54px}.brand{font-size:17px}.wrap{height:calc(100vh - 54px);padding:0}.game{border-radius:0;border:0}}
+</style>
+</head><body>
+<header class="top"><div class="brand">🍔 BURGER EDITION</div><button class="btn" onclick="fullScreen()">⛶ Fullscreen</button></header>
+<div class="wrap"><div class="game" id="game"><iframe src="https://h5cdn.github.io/s/retro-bowl" title="Retro Bowl" allowfullscreen></iframe></div></div>
+<script>function fullScreen(){const el=document.getElementById('game');if(el.requestFullscreen)el.requestFullscreen();}</script>
+</body></html>
